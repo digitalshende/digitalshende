@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Shende - Empowering Digital Excellence by Satish Shende</title>
+    <meta name="description" content="Digital Shende by Satish Shende offers expertise in Digital Marketing, Website Development, Android App Creation, Training, Guest Lectures, and Project Mentoring. 18.5+ years of experience.">
+    <meta name="keywords" content="Digital Marketing, Website Development, Android App Development, Training, Guest Lectures, Project Mentor, Satish Shende, Digital Shende, Tech Workshops, Maharashtra">
+    <meta name="author" content="Satish Shende">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.digitalshende.com" />
+    <meta property="og:title" content="Digital Shende - Empowering Digital Excellence">
+    <meta property="og:description" content="Master the art of the digital world with expert training and mentorship by Satish Shende.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.digitalshende.com">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Digital+Shende+Logo"> <!-- Replace with actual logo URL -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digital Shende - Empowering Digital Excellence">
+    <meta name="twitter:description" content="Expert training and mentorship in Digital Marketing, Web Development & Android Apps.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Digital+Shende+Logo"> <!-- Replace with actual logo URL -->
+    <link rel="icon" type="image/x-icon" href="https://via.placeholder.com/32.png?text=DS"> <!-- Placeholder favicon -->
+    <style>
+        /* Advanced CSS3 with Variables, Flexbox, Grid, Animations, and Modern Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0a4275;      /* Deep professional blue from original site */
+            --secondary-color: #f0b202;    /* Accent gold for energy */
+            --light-bg: #f8f9fa;
+            --dark-text: #212529;
+            --gray-text: #6c757d;
+            --white: #ffffff;
+            --box-shadow: 0 10px 30px -10px rgba(0,0,0,0.15);
+            --border-radius: 12px;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --font-main: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--dark-text);
+            line-height: 1.6;
+            background-color: var(--white);
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* Smooth scroll and selection */
+        ::selection {
+            background-color: var(--secondary-color);
+            color: var(--dark-text);
+        }
+
+        /* Reusable container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 5vw, 2.8rem);
+            letter-spacing: -0.01em;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2.5rem;
+        }
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+            border-radius: 4px;
+        }
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 14px 36px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            box-shadow: 0 8px 20px rgba(10,66,117,0.3);
+            letter-spacing: 0.5px;
+        }
+        .btn:hover {
+            background-color: transparent;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(10,66,117,0.2);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255,255,255,0.9);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 24px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+        .logo span {
+            color: var(--secondary-color);
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-text);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            transition: var(--transition);
+        }
+        .nav-links a:hover:after,
+        .nav-links a.active:after {
+            width: 100%;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ffffff 0%, #f2f6fc 100%);
+            overflow: hidden;
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .hero-content h1 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            color: var(--gray-text);
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+        }
+        .hero-image {
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+        .hero-image svg {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 20px 20px rgba(0,0,0,0.1));
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Stats / Experience Section */
+        .stats {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 70px 0;
+            text-align: center;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 40px;
+        }
+        .stat-item {
+            padding: 20px;
+        }
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Services / Skills Section */
+        .services {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.03);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background-color: var(--secondary-color);
+            transition: var(--transition);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 40px -20px rgba(10,66,117,0.3);
+        }
+        .service-card:hover:before {
+            height: 100%;
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .service-card h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+        .service-card p {
+            color: var(--gray-text);
+        }
+
+        /* Workshops & Map Section - Inspired by original */
+        .workshops {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+        .map-container {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--box-shadow);
+            margin-top: 40px;
+        }
+        .map-svg {
+            width: 100%;
+            height: auto;
+        }
+        .map-caption {
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* About / Experience Summary */
+        .about {
+            padding: 100px 0;
+            background: linear-gradient(145deg, #fff 0%, #f9f9f9 100%);
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-text h2 {
+            margin-bottom: 2rem;
+        }
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--gray-text);
+            margin-bottom: 20px;
+        }
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .badge {
+            background: var(--secondary-color);
+            color: var(--dark-text);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0a1a2a;
+            color: #adb5bd;
+            padding: 60px 0 30px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col li {
+            margin-bottom: 12px;
+        }
+        .footer-col a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .footer-col a:hover {
+            color: var(--secondary-color);
+            padding-left: 5px;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.95rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                transition: 0.5s ease-in-out;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                z-index: 99;
+            }
+            .nav-links.active {
+                left: 0;
+            }
+            .nav-links a {
+                font-size: 1.3rem;
+            }
+            h2 {
+                font-size: 2.2rem;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .stat-number {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            .btn {
+                padding: 12px 28px;
+            }
+        }
+
+        /* Advanced JavaScript enhancements (like counter animation) will be in script */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">Digital<span>Shende</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#stats">Experience</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Mastering the Art of the Digital World</h1>
+                    <p>Comprehensive array of skills and services in digital marketing, website development, Android app creation, and expert mentorship.</p>
+                    <a href="#contact" class="btn">Empower Your Journey</a>
+                </div>
+                <div class="hero-image">
+                    <!-- Simple vector representation of digital skills -->
+                    <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="200" cy="200" r="150" fill="#0a4275" fill-opacity="0.05" stroke="#0a4275" stroke-width="2" stroke-dasharray="8 8"/>
+                        <circle cx="200" cy="200" r="100" fill="#0a4275" fill-opacity="0.1" stroke="#f0b202" stroke-width="4"/>
+                        <path d="M200 50 L200 150 M200 250 L200 350 M50 200 L150 200 M250 200 L350 200" stroke="#f0b202" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="200" cy="200" r="40" fill="#0a4275" fill-opacity="0.8" stroke="#f0b202" stroke-width="3"/>
+                        <text x="200" y="210" text-anchor="middle" fill="white" font-weight="bold" font-size="14" font-family="Arial">DS</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats / Experience Section -->
+        <section id="stats" class="stats">
+            <div class="container">
+                <h2 style="color: white; margin-bottom: 2.5rem;" class="text-center">Aggregate Experience</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="18.5">0</div>
+                        <div class="stat-label">Years+ Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Guest Lectures+</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="175">0</div>
+                        <div class="stat-label">Workshops+</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Projects Mentored+</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Faculty Trainings+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Skills Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="text-center">Comprehensive Digital Skills</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">📈</div>
+                        <h3>Digital Marketing</h3>
+                        <p>SEO, SEM, Social Media, Content Strategy & Analytics. Real-world workshop training.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Website Development</h3>
+                        <p>Modern, responsive, and performant websites using HTML5, CSS3, JavaScript, and more.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Android App Creation</h3>
+                        <p>End-to-end Android app development mentoring from idea to Play Store deployment.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎓</div>
+                        <h3>Guest Lectures & Training</h3>
+                        <p>100+ lectures delivered across Maharashtra. Faculty development & industrial training.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshops & Map Section (inspired by original site) -->
+        <section id="workshops" class="workshops">
+            <div class="container">
+                <h2 class="text-center">Mapping Digital Marketing Workshops Across Maharashtra</h2>
+                <div class="map-container">
+                    <!-- Stylized SVG Map of Maharashtra with markers -->
+                    <svg class="map-svg" viewBox="0 0 500 300" preserveAspectRatio="xMidYMid meet">
+                        <rect width="500" height="300" fill="#e9f0f5" rx="10" />
+                        <!-- Abstract map shape of Maharashtra -->
+                        <path d="M150 80 L250 50 L380 80 L420 150 L380 220 L280 260 L150 240 L100 180 L150 80" fill="#0a4275" fill-opacity="0.2" stroke="#0a4275" stroke-width="3"/>
+                        <!-- Workshop location markers -->
+                        <circle cx="220" cy="120" r="8" fill="#f0b202" stroke="white" stroke-width="2">
+                            <title>Satara Region -  Workshops</title>
+                        </circle>
+                        <circle cx="320" cy="150" r="8" fill="#f0b202" stroke="white" stroke-width="2">
+                            <title>Karad -  Workshops</title>
+                        </circle>
+                        <circle cx="280" cy="200" r="8" fill="#f0b202" stroke="white" stroke-width="2">
+                            <title>Nashik -  Workshops</title>
+                        </circle>
+                        <circle cx="400" cy="180" r="8" fill="#f0b202" stroke="white" stroke-width="2">
+                            <title>Parbhani -  Workshops</title>
+                        </circle>
+                        <circle cx="170" cy="180" r="8" fill="#f0b202" stroke="white" stroke-width="2">
+                            <title>Kolhapur -  Workshops</title>
+                        </circle>
+                    </svg>
+                    <p class="map-caption">📍 Major workshop locations: Satara, Karad, Parbhani, Nashik, Kolhapur more</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Experience & Mentoring -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div>
+                        <h2>Empowering Tech Professionals</h2>
+                        <p>With 18.5+ years as a resource person, education and technology entrepreneur, trainer, and guest lecturer, I blend practical skills with industry insights.</p>
+                        <p>From resume writing workshops to advanced project mentoring in digital marketing, web, and app development, the goal is to foster innovation and practical expertise.</p>
+                        <div class="badge-list">
+                            <span class="badge">Trainer</span>
+                            <span class="badge">Guest Lecturer</span>
+                            <span class="badge">Project Mentor</span>
+                            <span class="badge">Digital Marketing</span>
+                            <span class="badge">Android Dev</span>
+                            <span class="badge">Web Dev</span>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Resume Writing Workshop Mention -->
+                        <div style="background: var(--white); border-radius: var(--border-radius); padding: 30px; box-shadow: var(--box-shadow);">
+                            <h3 style="color: var(--primary-color);">Resume Writing Workshop</h3>
+                            <p>Specialized workshops to help aspiring tech professionals craft winning resumes and stand out in the competitive job market.</p>
+                            <p style="margin-top: 20px;"><strong>5+ Faculty Development Trainings | 3+ Industrial FDPs</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (simple) -->
+        <section id="contact" style="padding: 80px 0; background: var(--white);">
+            <div class="container text-center">
+                <h2>Let's Connect</h2>
+                <p style="max-width: 600px; margin: 0 auto 40px;">For guest lectures, project mentoring, or collaborative training programs, reach out to empower the next wave of digital talent.</p>
+                <a href="mailto:digialshende@gmail.com" class="btn" style="background: var(--secondary-color); color: var(--dark-text); box-shadow: 0 8px 20px rgba(240,178,2,0.3);">Email Us</a>
+				  <a href="https://wa.link/20d7ax" class="btn" style="background: var(--secondary-color); color: var(--dark-text); box-shadow: 0 8px 20px rgba(240,178,2,0.3);">Whats App Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Digital Shende</h4>
+                    <p>Empowering digital excellence through training, mentorship, and innovation since 2020.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#stats">Experience</a></li>
+                        <li><a href="#workshops">Workshops</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Android App Dev</a></li>
+                        <li><a href="#">Guest Lectures</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/satishshende/">LinkedIn</a></li>
+                        <li><a href="https://sites.google.com/view/satish-shende/home">G-site</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Digital Shende by Satish Shende. All rights reserved. | Designed with 💡 for digital empowerment.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Advanced JavaScript: Mobile menu, animated counters, smooth scroll, active nav -->
+    <script>
+        (function() {
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+            // Active nav link highlighting on scroll
+            const sections = document.querySelectorAll('section[id]');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Animated counters for stats section
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200; // lower = faster
+
+            const animateCounters = () => {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+
+                        // Handle decimal for 18.5
+                        if (counter.getAttribute('data-target') === '18.5') {
+                            if (count < target) {
+                                const increment = 0.1;
+                                let newVal = count + increment;
+                                newVal = Math.min(newVal, target);
+                                counter.innerText = newVal.toFixed(1);
+                                setTimeout(updateCount, 50);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        } else {
+                            const increment = Math.ceil(target / 15);
+                            if (count < target) {
+                                let newVal = count + increment;
+                                newVal = Math.min(newVal, target);
+                                counter.innerText = newVal;
+                                setTimeout(updateCount, speed / 2);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        }
+                    };
+                    updateCount();
+                });
+            };
+
+            // Trigger counters when stats section is in view
+            const statsSection = document.getElementById('stats');
+            let animated = false;
+            window.addEventListener('scroll', () => {
+                if (!animated && statsSection) {
+                    const rect = statsSection.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        animateCounters();
+                        animated = true;
+                    }
+                }
+            });
+
+            // Ensure counters also run if already visible on load
+            if (statsSection && statsSection.getBoundingClientRect().top < window.innerHeight) {
+                animateCounters();
+                animated = true;
+            }
+
+            // SEO enhancement: structured data (JSON-LD)
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.text = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Satish Shende",
+                "url": "https://www.digitalshende.com",
+                "jobTitle": "Digital Trainer & Mentor",
+                "description": "Expert in Digital Marketing, Web Development, Android App Creation with 18.5+ years experience.",
+                "sameAs": [
+                    "https://www.linkedin.com/in/satish-shende"
+                ],
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Digital Shende"
+                },
+                "knowsAbout": ["Digital Marketing", "Web Development", "Android Development", "Training", "Mentoring"]
+            });
+            document.head.appendChild(script);
+        })();
+    </script>
+    <!-- Note: For production, replace placeholder image URLs and contact email -->
+</body>
+</html>
